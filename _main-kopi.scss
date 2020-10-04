@@ -1,0 +1,359 @@
+
+.site {
+    font-family: lato, sans-serif;
+}
+//MENU
+.site-header {
+    display: flex;
+    flex-direction: column;
+    // LOGO
+    .site-title {
+        font-size: 26px;
+        margin-left: 20px;
+        a {
+            color: $font-color;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+    .custom-logo-link {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .main-navigation {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-right: 20px;
+       
+        // links i menu
+        a {
+            color: $font-color;
+            font-size: 19.2px;
+            font-weight: 400;
+            margin-right: 20px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        // hamburger-knappen
+        .menu-toggle {
+            padding: 0;
+            border: none;
+            background-color: white;
+            margin-top: -42px;
+        }
+        .menu {
+            align-self: flex-start;
+        }
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+// overskriftens placering
+.entry-header {
+    max-width: 700px;
+    width: 100%;
+    h1{
+        margin: -100px;
+        visibility: hidden;
+    }
+}
+// indholdet centreret på siden 
+.entry-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px !important;
+}
+// "standardbredden" for content
+/*p, figure, h1 {
+    max-width: 700px;
+} */
+// klasse til billeder, der skal have fuld bredde
+.img-wide {
+    max-width: 100%;
+}
+
+//FOOTER
+.site-footer {
+    background-color: $background-color;
+    padding: 20px;
+    p{
+    color: $font-color;
+    text-align: left;
+    font-size: 12px;
+    padding: 5px;
+    }
+    a{
+        color: $link-color;
+        padding: 8px;
+    }
+}
+
+//FORSIDE
+.home .site {
+    header {
+        background-color: $background-color;
+    }
+}
+.site-header{
+    padding: 20px;
+}
+//forside background
+.frontpagebackground {
+    background-image: url("https://assets-global.website-files.com/5d657603495993f5656df5ed/5f735e1648be19248fea0d38_background-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: $my-width;
+    padding-top: $background-padding !important;
+    padding-bottom: $background-padding !important;
+    display:flex;
+    justify-content: center;
+}
+.helloh1{
+    color:$font-color;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    margin: 0px 0px 30px;
+    padding: 50px 0px 50px 0px;
+}
+
+h2 {
+    font-size: 30px;
+    color: $font-color;
+    margin: 10px;
+    text-align: center;
+}
+p{
+    font-size: 18px;
+    color: $font-color;
+    margin: 10px;
+}
+.indexlink a{
+    color: $link-color;
+}
+.frontpagetext{
+   padding: 50px;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+   padding: 20px;
+}
+.row img{
+    width: $my-width;
+}
+.row:after{
+    content: "";
+    clear: both;
+    display:table;
+}
+.newsletterbackground {
+    background-image: url("https://assets-global.website-files.com/5d657603495993f5656df5ed/5f735feb73acdd7fd7eff6df_background-footer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: $my-width;
+    padding-top: $background-padding !important;
+    padding-bottom: $background-padding !important;
+    display:flex;
+    justify-content: center;
+ }
+
+.newsletter{
+    input {
+        margin: 17px;
+        padding: 15px;
+        width: 250px;
+        border-radius: 5px;
+    }
+    button {
+        font-size: 15px;
+        background-color: $link-color;
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+    }
+}
+
+//ARTICLES
+//articles baggrundsbillede
+.articlesbackground { 
+    background-image:url("https://assets-global.website-files.com/5d6576034959930c066df612/5e39cb85eeb2592ab55358ed_How%20to%20Answer%20Preview.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: $my-width;
+    padding-top: $background-padding !important;
+    padding-bottom: $background-padding !important;
+    display:flex;
+    justify-content: center;
+    h2, p{
+        color: #ffffff;
+        padding-left: 20px;
+    }
+}
+
+.articlediv {
+    padding: 10px;
+    h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    a {
+        color: $font-color;
+        text-decoration: none;
+    }
+}
+ //CONTACT
+ .contact{
+    h2{
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+    a{
+        color: $link-color;
+    }
+
+}
+.contactformular{
+    align-content: center;
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .submit{
+          background-color: $link-color;
+          color: white;  
+          font-size: 12px;
+          border-radius: 3px;
+          padding: 15px;
+          width: 100px;
+      }
+}
+
+@media screen and (min-width: 800px) {
+    .site-header {
+        flex-direction: row;
+        .main-navigation {
+            display: flex;
+            justify-content: flex-end;
+            .menu-menu-1-container {
+                width: $my-width;
+                display: flex;
+                justify-content: flex-end;
+                .menu-item {
+                    margin: 9px;
+                }
+             
+            }
+          
+        }
+       
+    }
+
+ 
+//FORSIDE MEDIA
+.helloh1 {
+font-size: 50px;
+}
+h2{
+font-size: 48px;
+}
+p {
+font-size: 24px;
+}
+.frontpagetext {
+padding: 100px;
+ h2 {
+     text-align:left;
+ }
+}
+
+.column {
+    width: $my-width;
+    img{
+        padding: 20px;
+    }
+}
+.newsletter{
+    text-align: center;
+    input {
+        margin: 17px;
+        padding: 10px;
+    }
+    button {
+        font-size: 20px;
+        width: 250px;
+    }
+}
+.newsletterpara p{
+    text-align: center;
+ }
+
+//ARTICEL MEDIA
+.articlediv {
+    padding: 150px;
+    h2{
+        font-size: 30px;
+        text-align: left;
+        }
+}
+
+//CONTACT MEDIA
+.contact{
+    h2{
+        text-align: left;
+    }
+     p{
+         font-size: 24px;
+         text-align: left;
+     }
+}
+.contactformular{
+    align-content: left;
+}
+
+//FOOTER MEDIA
+.site-footer {
+    p{
+        color: $font-color;
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+    }
+        a{
+            color: $link-color;
+            padding: 8px;
+        }
+}
+
+    // fordeler én paragraf i flere kolonner 
+    .p-columns-2 {
+        column-count: 3;
+    }
+}
+
+// stopklods
+@media screen and (min-width: 1200px) {
+
+}
